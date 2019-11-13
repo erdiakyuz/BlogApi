@@ -12,7 +12,7 @@ Repository Pattern ve UnitOfWork kullandım. UoW context ve Repository yönetimi
 Pagination'a uygun Get yapıları, Global Exception Handling yapısını kullanmak, Utility bazındaki methodların gerekli overloadları, Güvenlik için Token ile haberleşme, Mapperların organizasyonu.
 
 ### Eklemek istediğiniz bir yorumunuz var mı? 
-
-GitHub üzerinden adım adım commit istemişsiniz ancak ben onu atlamışım. Projenin ilerleyiş kronolojisi aşağıdaki gibidir.
+Proje locale çekilip migrate edilirse, Dummy data içeren Veritabanı oluşacaktır.
+GitHub üzerinden adım adım commit istemişsiniz ancak ben onu atlamışım. Projenin geliştime ilerleyiş kronolojisi aşağıdaki gibidir.
 ```bash
 Repository -> Utility -> API -> EF Configuration ve Mappings

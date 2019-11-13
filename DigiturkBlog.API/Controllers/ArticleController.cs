@@ -59,7 +59,10 @@ namespace DigiturkBlog.API.Controllers
                 return BadRequest();
             }
         }
-        public IActionResult Post(Article article) {
+
+        [HttpPost]
+        public IActionResult Post([FromBody]Article article)
+        {
             try
             {
                 if (_articleUtility.Add(article))
@@ -101,5 +104,6 @@ namespace DigiturkBlog.API.Controllers
                 return BadRequest();
             }
         }
+
     }
 }

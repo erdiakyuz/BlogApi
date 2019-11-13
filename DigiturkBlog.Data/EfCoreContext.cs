@@ -21,14 +21,14 @@ namespace DigiturkBlog.Data
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server =DESKTOP-FOMOG3D; Database = DigiturkBlogDB; Integrated Security = SSPI;");
+            optionsBuilder.UseSqlServer("Server =.; Database = DigiturkBlogDB; Integrated Security = SSPI;");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Author>().HasKey(x => x.Id);
             modelBuilder.Entity<Tag>().HasKey(x => x.Id);
             modelBuilder.Entity<Article>().HasKey(x => x.Id);
-
+             
             modelBuilder.Entity<ArticleTag>()
                 .HasKey(x => new { x.TagId, x.ArticleId });
 

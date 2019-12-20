@@ -1,6 +1,6 @@
-##Asp.NET WebAPI Core Blog project
+## Asp.NET WebAPI Core Blog project
 
-####Features
+#### Features
 
 - .Net Core 3.0
 - .Net EF Core
@@ -8,6 +8,6 @@
 - Repository Pattern , Unit Of Work
 - Dependency Injection
 
-####Development process
+#### Development process
 
-Repository -> Utility -> API -> EF Configuration ve Mappings
+- Repository -> Utility -> API -> EF Configuration ve Mappings
